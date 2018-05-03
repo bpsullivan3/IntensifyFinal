@@ -7,9 +7,6 @@
     tools:context=".ThirdActivity">
 
 
-
-
-
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -18,20 +15,79 @@
         android:paddingRight="16dp"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="105dp"
-        android:background="@color/darkred"
-        >
+        android:background="@color/darkred">
 
-    <TextView
-        android:id="@+id/intensityValue"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="50dp"
-        android:text="@string/intensityReading"
-        />
+        <TextView
+            android:id="@+id/intensityValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="0dp"
+            android:text="@string/intensityReading"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/albumArt"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/songTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/songTitle"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/artistName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/artist"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/albumName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/album"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/skipPrev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/white"
+            android:text="Previous Song"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/playPause"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/white"
+            android:onClick="playOrPauseSong"
+            android:text="@string/pause"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/skipNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/white"
+            android:text="Next Song"
+            android:textColor="@android:color/black" />
+
+
 
     </LinearLayout>
-
-
 
 
 </android.support.design.widget.CoordinatorLayout>

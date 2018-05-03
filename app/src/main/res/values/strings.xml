@@ -6,4 +6,9 @@
     <string name="title_activity_second_avtivity">SecondAvtivity</string>
     <string name="title_activity_third">third_activity_layout</string>
     <string name="intensityReading">Current Intensity: </string>
+    <string name="pause">Pause</string>
+    <string name="play">Play</string>
+    <string name="songTitle">Title: </string>
+    <string name="artist">Artist: </string>
+    <string name="album">Album: </string>
 </resources>
